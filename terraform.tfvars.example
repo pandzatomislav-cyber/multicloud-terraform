@@ -1,0 +1,19 @@
+# Copy this file to terraform.tfvars and fill in your values
+# NEVER commit terraform.tfvars — it is in .gitignore
+
+environment = "dev"
+
+# Azure credentials (create a Service Principal in Azure AD)
+azure_subscription_id      = "your-subscription-id"
+azure_client_id            = "your-client-id"
+azure_client_secret        = "your-client-secret"
+azure_tenant_id            = "your-tenant-id"
+azure_resource_group       = "portfolio-rg"
+azure_location             = "West Europe"
+azure_storage_account_name = "portfoliodatatp"
+
+# GCP credentials (set GOOGLE_APPLICATION_CREDENTIALS env var)
+gcp_project_id       = "your-gcp-project-id"
+gcp_region           = "europe-west1"
+gcp_bucket_name      = "portfolio-data-tp"
+gcp_bigquery_dataset = "portfolio_analytics"
