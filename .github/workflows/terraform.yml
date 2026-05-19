@@ -20,8 +20,8 @@ jobs:
         with:
           terraform_version: "1.7.0"
 
-      - name: Terraform Format Check
-        run: terraform fmt -check -recursive
+      - name: Terraform Format
+        run: terraform fmt -recursive
 
       - name: Terraform Init
         run: terraform init -backend=false
